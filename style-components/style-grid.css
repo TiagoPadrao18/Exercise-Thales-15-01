@@ -1,0 +1,52 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.grid-container{
+    
+    grid-template-areas: 
+    "logo header header header"
+    "aside aside main aside2";
+    color: black;
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr 1fr 1fr;
+    grid-template-rows: 25vh 50vh;
+    
+
+}
+
+.asside-1 {
+    grid-area: aside;
+    border: 10px solid black;
+
+}
+
+.navbar-left{
+
+    grid-area: logo;
+    border: 10px solid black;
+}
+
+.navbar-right{
+    grid-area: header;
+
+    border: 10px solid black;
+}
+  
+
+
+.asside-center{
+
+    grid-area: main;
+    border: 10px solid black;
+}
+
+.asside-3{
+
+    grid-area: aside2;
+    border: 10px solid black;
+}
